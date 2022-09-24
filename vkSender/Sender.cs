@@ -18,7 +18,8 @@ namespace vkSender
 
         private Random rnd { get; set; }
 
-        public Sender()        {
+        public Sender()
+        {
             api = new VkApi();
             rnd = new Random();
         }
