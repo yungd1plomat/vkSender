@@ -48,7 +48,7 @@ namespace vkSender
                 {
                     userIds.Add(item.Conversation.Peer.Id);
                 }
-                double percentage = offset / (count - 1) / 200 + 1;
+                double percentage = (offset / (double)((count - 1) / 200 + 1)) * 100;
                 Console.WriteLine($"Получение пользователей, выполнено {percentage} %");
             }
             Console.WriteLine($"Получено {userIds.Count()} пользователей");
